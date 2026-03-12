@@ -1,0 +1,138 @@
+
+.section__container {
+    padding: 12rem 5% 8rem 5%; /* Increased top padding to account for fixed header (10rem height) */
+    max-width: 1200px;
+    margin: 0 auto;
+    animation: fadeUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section__title {
+    font-size: 3.5rem;
+    color: var(--heading-color);
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.section__subtitle {
+    font-family: var(--subtitle-font-name);
+    color: var(--secondary-color);
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+/* About Page */
+.about__content {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 4rem;
+}
+
+.about__img {
+    flex: 1;
+}
+
+.about__img img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.about__text {
+    flex: 1.2;
+}
+
+.about__text p {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+/* Team Page */
+.team__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.team__card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.team__card:hover {
+    transform: translateY(-10px);
+}
+
+.team__member-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+    border: 5px solid #f0f0f0;
+}
+
+.team__card h3 {
+    font-size: 2rem;
+    color: var(--heading-color);
+    margin-bottom: 0.5rem;
+}
+
+.team__card span {
+    color: var(--secondary-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Gallery Page */
+.gallery__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.gallery__item {
+    overflow: hidden;
+    border-radius: 15px;
+    height: 250px;
+}
+
+.gallery__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery__item:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .about__content {
+        flex-direction: column;
+    }
+}

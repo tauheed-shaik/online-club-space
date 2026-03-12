@@ -1,0 +1,109 @@
+
+.admin__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.admin__header h2 {
+    font-size: 2.8rem;
+    color: var(--heading-color);
+}
+
+.admin__events-table {
+    background: #fff;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    padding: 1.5rem;
+    border-bottom: 2px solid #f0f0f0;
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+
+td {
+    padding: 1.5rem;
+    border-bottom: 1px solid #f9f9f9;
+    font-size: 1.5rem;
+    color: var(--heading-color);
+}
+
+.admin__actions {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.edit-btn {
+    color: #4a90e2;
+    font-weight: 600;
+}
+
+.delete-btn {
+    color: #e74c3c;
+    background: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.delete-btn:hover {
+    color: #c0392b;
+}
+
+/* Form Styling for Add/Edit */
+.admin__form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 4rem;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.admin__form-container h3 {
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.admin__form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.admin__form-container input, 
+.admin__form-container textarea,
+.admin__form-container select {
+    padding: 1.2rem 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-family: inherit;
+}
+
+.admin__form-container textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+.checkbox-group input {
+    width: auto;
+}
